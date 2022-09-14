@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+<body>
+    <div class="row">
+    <div class="block">
+        <i class="fa-solid fa-poo fa-2x"></i>
+    </div>
+
+    <div class="block" style="flex-grow:2;">
+        <i class="fa-solid fa-face-frown fa-2x"></i>
+        <i class="fa-solid fa-face-frown fa-2x"></i>
+        <i class="fa-solid fa-face-frown fa-2x"></i>
+    </div>
+    <div class="block" style="flex-grow: 0; flex-basis: auto;">
+        <i class="fa-solid fa-cat fa-2x"></i>
+    </div>
+    </div>
+    <style>
+        .block {
+            border: 1px solid black;
+            margin: 0.25rem; 
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        flex-grow: 1;
+        flex-basis: 0; 
+        }
+        .row {
+        display: flex;
+    }
+    </style>
+</body>
+</html>
+
+
