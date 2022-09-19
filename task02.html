@@ -1,107 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="paragraph1 bordered">  
-    Тучу передернуло <span class=" adjective bordered">синим</span> пламенем. 
-    Медленно загремел гром. <br> Он то усиливался, то почти затихал. И дождь, подчиняясь грому, начал временами идти сильнее 
-    и широко шуметь по листве, потом останавливался. 
-    </div> 
+  <div class="paragraph1 bordered">
+    Тучу передернуло <span class=" adjective bordered">синим</span> пламенем.
+    Медленно загремел гром. <br> Он то усиливался, то почти затихал. И дождь, подчиняясь грому, начал временами идти
+    сильнее
+    и широко шуметь по листве, потом останавливался.
+  </div>
 
-   <div  class="paragraph2 bordered">
-     Вскоре сквозь тучи пробилось солнце.Старый <span class = " adjective bordered">пушкинский</span> 
-     парк в <span class="name" style="background: linear-gradient(90deg, #66ff00, #d7eaff);">Михайловском</span>
-      и крутые берега <br>
-     Сороти запылали <span class=" adjective bordered">рыжей</span> глиной и мокрой травой. Стройная радуга зажглась 
-     над пасмурной далью. 
-     <br>Она сверкала и дымилась, окруженная космами <span class = " adjective bordered">пепельных</span> туч. 
-     Радуга была похожа на арку, воздвигнутую на границе заповедной земли. <br> С особенной силой здесь, 
-     в пушкинских местах, возникали мысли о <span class = " adjective bordered">русском</span> языке.
-    </div>
+  <div class="paragraph2 bordered">
+    Вскоре сквозь тучи пробилось солнце.Старый <span class=" adjective bordered">пушкинский</span>
+    парк в <span class="name" style="background: linear-gradient(90deg, #66ff00, #d7eaff);">Михайловском</span>
+    и крутые берега <br>
+    Сороти запылали <span class=" adjective bordered">рыжей</span> глиной и мокрой травой. Стройная радуга зажглась
+    над пасмурной далью.
+    <br>Она сверкала и дымилась, окруженная космами <span class=" adjective bordered">пепельных</span> туч.
+    Радуга была похожа на арку, воздвигнутую на границе заповедной земли. <br> С особенной силой здесь,
+    в пушкинских местах, возникали мысли о <span class=" adjective bordered">русском</span> языке.
+  </div>
 
-     <div  class="paragraph3 bordered">
+  <div class="paragraph3 bordered">
     Здесь </span> парк в <span class="name" style="background: linear-gradient(90deg, #f80000, #0077ff);">Пушкин</span>
-     бродил с <span class = " adjective bordered">непокрытой</span> головой, со спутанными 
-    осенним ветром холодными волосами, <br>слушал <span class = " adjective bordered">влажный</span> гул сосновых вершин, 
-    смотрел, прищурившись, откуда несутся осенние тучи, <br> толкался по ярмаркам. Здесь <span class = " adjective bordered">чудесные</span> слова
-    переполняли его, стесняли его душу и, 
+    бродил с <span class=" adjective bordered">непокрытой</span> головой, со спутанными
+    осенним ветром холодными волосами, <br>слушал <span class=" adjective bordered">влажный</span> гул сосновых вершин,
+    смотрел, прищурившись, откуда несутся осенние тучи, <br> толкался по ярмаркам. Здесь <span
+      class=" adjective bordered">чудесные</span> слова
+    переполняли его, стесняли его душу и,
     наконец, <br>слагались по огрызком гусиного пера в звенящие строфы.
 
-     </div>
-     <style>
-      .adjective {
-        
-        display: inline-block;  
-        transition: all 0.3s;
+  </div>
+  <style>
+    .adjective {
+
+      display: inline-block;
+      transition: all 0.3s;
     }
+
     .adjective:hover {
-        background: skyblue;
-        cursor: pointer;
-    }
+    background: skyblue;
+    cursor: pointer;
+    border-width: 4px; 
+    padding: 6px; 
+    box-shadow: 0 0 30px white; 
+}
 
     .bordered {
-    border: 2px dashed black;
-    display: inline-block; 
-    margin: 2px; 
-    padding: 0 4px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px grey;
+      border: 2px dashed rgb(41, 41, 41);
+
+      margin: 2px;
+      padding: 0 4px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px grey;
     }
 
-        .paragraph1 {
-        background: #a6dafd;
-        text-align: center;
-  }
-  
-  .paragraph1 .adjective  {
-    margin: 8px 0;
-    border-width: 3px;
-    background: #ffa6f3;
+    .paragraph1 {
+      background: #a6dafd;
+      text-align: center;
     }
-  
+
+    .paragraph1 .adjective {
+      margin: 8px 0;
+      border-width: 3px;
+      background: #ffa6f3;
+    }
+
+    .paragraph1.bordered {
+      margin: 8px 0;
+      border-width: 3px;
+      border: 5px outset rgb(255, 25, 197);
+
+    }
+
+    .paragraph1 .adjective:hover {
+      background: red;
+    }
+
     .paragraph2 {
-        width: 500px;
-        background: linear-gradient(90deg, #ff4fc4, #3f90ec);
-        
-        text-align: right;
-   
-       
-  }
+      width: 500px;
+      background: linear-gradient(90deg, #ff4fc4, #3f90ec);
+
+      text-align: right;
+
+
+    }
+
     .paragraph2 .adjective {
-    margin: 8px 0;
-    border-width: 3px;
-    background:#f37e3b;
+      margin: 8px 0;
+      border-width: 3px;
+      background: #f37e3b;
     }
-  
+
+    .paragraph2.bordered {
+      margin: 16px 0;
+      border-width: 7px;
+      border: 20px dotted rgb(255, 251, 0);
+
+    }
+
+    .paragraph2 .adjective:hover {
+      background: red;
+    }
+
     .paragraph3 {
-        box-sizing: border-box;width: 50%;
-        background: linear-gradient(90deg, #f37e3b, #ffa6f3);
-        text-align: left;
-  }
-    .paragraph3 .adjective {
-    margin: 8px 0;
-    border-width: 3px;
-    background:#17ea9d;
+      box-sizing: border-box;
+      width: 50%;
+      background: linear-gradient(90deg, #f37e3b, #ffa6f3);
+      text-align: left;
     }
-    .paragraph1 .paragraph:hover .paragraph3 .adjective:hover{
-        background: #66ff00;
+
+    .paragraph3 .adjective {
+      margin: 8px 0;
+      border-width: 3px;
+      background: #17ea9d;
+    }
+
+    .paragraph3.bordered {
+      margin: 16px 0;
+      border-width: 16px;
+      border: 10px double rgb(85, 0, 223);
+
+    }
+
+    .paragraph3 .adjective:hover {
+      background: red;
     }
   </style>
 
   <style>
     .name {
-        padding: 2px 8px;
-        width: 100px;
-        border: 1px solid rgb(94, 94, 175);
-        transition: all 0.3s;
-  }
-  
-  
+      padding: 2px 8px;
+      width: 100px;
+      border: 1px solid rgb(94, 94, 175);
+      transition: all 0.3s;
+    }
   </style>
 </body>
+
 </html>
